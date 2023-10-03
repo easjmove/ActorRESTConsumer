@@ -8,5 +8,8 @@ List<Actor> actorList = worker.Get().Result;
 
 foreach (Actor actor in actorList)
 {
-    Console.WriteLine(actor.Name);
+    Console.WriteLine(actor);
 }
+
+Actor actorByID = worker.GetById(1).Result;
+Console.WriteLine(actorByID);
